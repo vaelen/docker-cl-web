@@ -24,4 +24,6 @@ RUN sbcl --eval '(ql:quickload :clack)' --quit
 
 COPY src/* /lisp/
 
+EXPOSE 5000
+
 CMD ["sbcl", "--non-interactive --load run.lisp"]
