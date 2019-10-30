@@ -26,4 +26,5 @@ COPY src/* /lisp/
 
 EXPOSE 5000
 
-CMD ["sbcl", "--non-interactive --load run.lisp"]
+CMD ["--noinform", "--noprint", "--disable-debugger", "--load", "run.lisp"]
+ENTRYPOINT ["sbcl"]
