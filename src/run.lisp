@@ -6,5 +6,6 @@
    '(200 (:content-type "text/plain") ("Hello, World")))
  :server :woo
  :address "*"
+ :port (uiop:getenv "PORT")
  :use-default-middlewares nil)
 

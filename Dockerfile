@@ -24,6 +24,7 @@ RUN sbcl --eval '(ql:quickload :clack)' --quit
 
 COPY src/* /lisp/
 
+ENV PORT 5000
 EXPOSE 5000
 
 CMD ["--noinform", "--noprint", "--disable-debugger", "--load", "run.lisp"]
