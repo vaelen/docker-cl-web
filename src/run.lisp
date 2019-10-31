@@ -5,4 +5,6 @@
    (declare (ignore env))
    '(200 (:content-type "text/plain") ("Hello, World")))
  :server :woo
+ :address "*"
  :use-default-middlewares nil)
+
